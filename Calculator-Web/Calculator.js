@@ -1,0 +1,20 @@
+var userName = window.prompt("Please Enter your Name");
+var greetingParagraph = document.getElementById("greeting");
+greetingParagraph.innerHTML +=", " + userName;
+var num1 = parseInt(window.prompt("Please Enter first operand"));
+var operand1 = document.getElementById("operand1Paragraph");
+operand1.innerHTML += num1;
+var num2 = parseInt(window.prompt("Please Enter second operand"));
+var operand2 = document.getElementById("operand2Paragraph");
+operand2.innerHTML += num2;
+var sum = num1 + num2 ;
+var sub = num1 - num2 ;
+var mul = num1 * num2 ;
+var div = num1 / num2 ;
+var mod = num1 % num2 ;
+
+document.getElementById("addition").innerHTML = "the sum of " + num1 + " and " + num2 + " is " + sum;
+document.getElementById("subtraction").innerHTML +="the difference between " + num1 + " and " + num2 + "is " +sub;
+document.getElementById("multiplication").innerHTML +="the product of "+num1 + " and " + num2 +" is " + mul;
+document.getElementById("division").innerHTML += "The quotient of " + num1+ " and " + num2 +" is " + div;
+document.getElementById("modulus").innerHTML += "The result of the mod operation on "+ num1 + " and " + num2 + " is " + mod;
