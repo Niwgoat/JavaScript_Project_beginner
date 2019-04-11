@@ -17,6 +17,7 @@ function changeList(){
         list.appendChild(newItem);
         newItem.appendChild(doneButton);
         doneButton.addEventListener("click",removeTask);
+       
 
     }
     else{
@@ -29,9 +30,10 @@ clearButton.addEventListener("click" , function(){
 });
 function removeTask(e){
     var taskItem = e.target.parentElement;
-    var task = taskItem.cloneNode(false);
+    var task = taskItem.cloneNode(true);
     doneList.appendChild(task);
     list.removeChild(taskItem);
+    doneList.lastChild.lastChild.remove();
 }
 function upperCaseFirstLetter(string){
     return string.charAt(0).toUpperCase() + string.slice(1);
