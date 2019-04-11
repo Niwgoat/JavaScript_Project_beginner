@@ -1,0 +1,84 @@
+body{
+    background-color: silver;
+}
+header {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16pt;
+    font-weight: 700;
+    color: rgb(45, 163, 199);
+    border: solid 1px wheat;
+    margin: 10%,10%,10%,10%;
+    margin-bottom: 3%;
+}
+#textInput {
+    background-color: ghostwhite;
+    border-radius: 5%;
+    height: 50px;
+    width: 200px;
+    margin-left: 4%; 
+    padding-left: 1%;
+}
+.button {
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 15%;
+    height: 47px;
+    width: 75px;
+    padding: 1% 1% 1% 1%;
+    color: beige;
+}
+#clearButton {
+    margin-left: 0.7%;
+    background-color: rgb(55, 145, 197);
+}
+#addButton {
+    margin-left: 1.5%;
+    background-color: brown;
+}
+ul{
+    width: 75%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+li{
+    list-style-type: none;
+    color: white;
+    font-weight: 600;
+    font-size: 1.3em;
+}
+
+
+#myList p {
+    padding-right:2%;
+    align-content: center;
+    padding-left:10%;
+    border-left: 10%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+button.remove {
+    padding: 5px;
+    margin-left: 20px;
+    background-color: #56baed;
+    border: 1px solid rebeccapurple;
+    border-radius: 10% 10% 10% 10%;
+    opacity: 0.5;
+}
+
+button.remove:hover {
+    background-color: lightseagreen;
+}
+#paragraph {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    font-size: 16px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    color: aliceblue;
+}
+#submitButton {
+    display: none;
+    margin-left: 48.5%;
+}
