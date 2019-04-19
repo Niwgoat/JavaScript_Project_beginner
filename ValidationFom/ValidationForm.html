@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>JavaScript form validation - checking email</title>
+<link rel='stylesheet' href='validatonForm.css' type='text/css' />      
+</head>
+<body >
+<div class="email">
+        <img src="c:/repos/Web-PhaseHtml/Module3-project/sign-up.png" id="icon" alt="User Icon" style="width:80px ; height:90px"/>
+    <form name="form1" action="#" onsubmit="return validateForm()"> 
+        <ul>
+            <li><input type="text" id="firstName" placeholder="first name"></input></li>
+            <li><input type="text" id="lastName" placeholder="last name"></input></li>
+            <li><input type="text" id="userName" placeholder="user name"></intput></li>
+            <p id="validateUserNameLength" class="error" hidden> **Your username should be at least 8 characters</p>
+            <p id="validateUserNameCase" class="error" hidden>**Your username should have at least one uppercase characters</p>
+            <li><input type="text" name="text1" id="mail" placeholder="email"/></li>
+            <p id="validationMassage" class="error" hidden>**Your email address is not valid! </li>
+            <li><input type="password" name="pass1" id="pass1" placeholder="passwword"></input></li>
+            <li><input type="password" name="pass2" id="pass2" placeholder="re-enter passwword"></input></li>
+            <p id = "validatePass" class ="error" hidden>**Your password should be at least 8 characters</p>
+            <p id = "validatePassMatch" class ="error" hidden>**Your passwords doesn't match!!</p>
+            <li class="submit" ><input type="submit" name="submit" value="Submit" id="submitButton"/></li>
+            <li>&nbsp;</li>
+        </ul>
+    </form>
+</div>
+<script src="validationForm.js"></script>
+</body>
+</html>
